@@ -33,7 +33,7 @@ public class InternalClientUpdateComponent extends ClientUpdateComponent {
         final float webchatInterval = configuration.getFloat("webchat-interval", 1);
         final String spammessage = dcore.configuration.getString("spammessage", "You may only chat once every %interval% seconds.");
         final Boolean use_player_ip = configuration.getBoolean("use-player-login-ip", true);
-        final Boolean req_player_ip = configuration.getBoolean("require-player-login-ip", false);
+        final Boolean req_player_ip = configuration.getBoolean("require-player-login-ip", true);
         final Boolean block_banned_player_chat = configuration.getBoolean("block-banned-player-chat", false);
         final Boolean req_login = configuration.getBoolean("webchat-requires-login", false);
         final Boolean chat_perm = configuration.getBoolean("webchat-permissions", false);

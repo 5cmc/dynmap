@@ -127,7 +127,7 @@ public class JsonFileClientUpdateComponent extends ClientUpdateComponent {
         jsonInterval = (long)(configuration.getFloat("writeinterval", 1) * 1000);
         hidewebchatip = configuration.getBoolean("hidewebchatip", false);
         useplayerloginip = configuration.getBoolean("use-player-login-ip", true);
-        requireplayerloginip = configuration.getBoolean("require-player-login-ip", false);
+        requireplayerloginip = configuration.getBoolean("require-player-login-ip", true);
         trust_client_name = configuration.getBoolean("trustclientname", false);
         checkuserban = configuration.getBoolean("block-banned-player-chat", true);
         req_login = configuration.getBoolean("webchat-requires-login", false);
